@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listowel Adolwin</title>
+    <script src="https://kit.fontawesome.com/2070b3b8bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="header-nav">
+                <img class="logo" src="images/logo.png" alt="">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="text-section">
+                    <p>
+                        Hi there, I am
+                    </p>
+                    <h1><span class="first-name">Listowel</span> Adolwin <br> from Ghana</h1>
+                    <p>I am a Software Engineer</p>
+                </div>
+                <div class="picture-section">
+                    <img class="about-image" src="images/background-pic.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <a class = "to-top" href="#header"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-pic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. R elit. Repellendus suscipit velit
+                        fuga distinctio natus nemo, optio quasi corrupti numquam corporis!
+                    </p>
+                    <div class="tab-titles ">
+                        <p class="tab-links active-tab-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    </div>
+                    <div id="skills" class="tab-content active-tab-content">
+                        <ul>
+                            <li><span>Front-end Development</span> <br> Builds user-friendly web designs</li>
+                            <li><span>Back-end Development</span> <br> Builds robust back-end to manage applicatios</li>
+                            <li><span>Devops</span> <br> Uses automation tools to enhance agile development</li>
+                        </ul>
+                    </div>
+                    <div id="experience" class="tab-content">
+                        <ul>
+                            <li><span>Research Assistant</span> <br> Made a research about Internet Of Things</li>
+                            <li><span>Financial Secretary</span> <br> Designed systems to manage the financies of my
+                                department</li>
+                        </ul>
+                    </div>
+                    <div id="education" class="tab-content">
+                        <ul>
+                            <li><span>2021 - 2024</span> <br> Bachelor Of Science in Computer Science</li>
+                            <li><span>2021 - 2022</span> <br> Software Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Services-->
+    <!--
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sit odio voluptates illo neque quasi eveniet nesciunt eligendi a. Sit.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sit odio voluptates illo neque quasi eveniet nesciunt eligendi a. Sit.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sit odio voluptates illo neque quasi eveniet nesciunt eligendi a. Sit.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+
+    <!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>AirBnB Application</h3>
+                        <p>Fullstack clone of the Airbnb Web application</p>
+                        <a href="https:www.listoweladolwin.tech/hbnb_static/103-index.html"><i class="fas fa-external-link-alt" ></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>AirBnB Application</h3>
+                        <p>Fullstack clone of the Airbnb Web application</p>
+                        <a href="https:www.listoweladolwin.tech/hbnb_static/103-index.html">Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>AirBnB Application</h3>
+                        <p>Fullstack clone of the Airbnb Web application</p>
+                        <a href="https:www.listoweladolwin.tech/hbnb_static/103-index.html">Link</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="see-more-btn">See more</a>
+        </div>
+    </div>
+
+
+    <!--Contact-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i><a class="email" href="mailto:">listoweladolwin@gmail.com</a> </p>
+                    <p><i class="fas fa-phone-square-alt"></i>+233550462566</p>
+                    <div class="social-icons">
+                        <a href="http://github.com/ListowelAdolwin" target="_blank"><i
+                                class="fa-brands fa-github"></i></a></li>
+                        <a href="https://www.linkedin.com/in/listowel-adolwin/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="http://twitter.com/ListowelAdolwin" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/in/listowel-adolwin/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a class= "CV see-more-btn" href="#" download="">Download CV </a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="enter name" required>
+                        <input type="email" name="email" placeholder="enter email" required>
+                        <textarea name="message" id="message" rows="5" placeholder="enter you message"></textarea>
+                        <button class = "submit see-more-btn cv" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p> Copyright &copy; Listowel</p>
+    </div>
+</body>
+
+</html>
