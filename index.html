@@ -21,13 +21,13 @@
     <div id="header">
         <div class="container">
             <nav class="header-nav">
-                <img class="logo" src="images/logo.png" alt="">
+                <h1 class="logo logo-listo"><span class="first-name ">LIS</span>TO.</h1>
                 <ul>
                     <i class="fas fa-times" onclick="hideMenu()"></i>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a target="_blank" href="blog.html">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <i class="fas fa-bars" onclick="showMenu()"></i>
@@ -35,13 +35,12 @@
             <div class="header-text">
                 <div class="text-section typewriter">
                     <div class="typewritter-div">
-                    <p class="name-p">
-                        Hi there, I am
-
-                    <h1><span class="first-name">Listowel</span> Adolwin <br> from Ghana</h1>
-                </p>
-                    <p>I am a Software Engineer</p>
-                </div>
+                        <p class="name-p">
+                            <span class="blinker">Hi there, I am </span>
+                        <h1><span class="first-name">Listowel</span> Adolwin <br> from Ghana</h1>
+                        </p>
+                        <p>I am a Software Engineer</p>
+                    </div>
                 </div>
                 <div class="picture-section">
                     <img class="about-image" src="images/background-pic.jpg" alt="">
@@ -51,7 +50,7 @@
         </div>
     </div>
     <div class="totop">
-        <a class = "to-top" href="#header"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+        <a class="totop" href="#header"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
         <span class="tooltiptext">Back to top</span>
     </div>
 
@@ -64,9 +63,10 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. R elit. Repellendus suscipit velit
-                        fuga distinctio natus nemo, optio quasi corrupti numquam corporis!
+                        I am a passionate Software Engineer. I like to build things for the Internet <br>
+                        I work well with both Front-end and Back-end, even though, I am more versed with front-end.
+                        I am currently working on my data structures and algorithms. <br>
+                        Need me for any collaboration? I am down, let's get it done.
                     </p>
                     <div class="tab-titles ">
                         <p class="tab-links active-tab-link" onclick="opentab('skills')"> Skills</p>
@@ -75,22 +75,58 @@
                     </div>
                     <div id="skills" class="tab-content active-tab-content">
                         <ul>
-                            <li><span>Front-end Development</span> <br> Builds user-friendly web designs</li>
-                            <li><span>Back-end Development</span> <br> Builds robust back-end to manage applicatios</li>
-                            <li><span>Devops</span> <br> Uses automation tools to enhance agile development</li>
+                            <li><span>Proficient Languages</span> <br>
+                                <ul class="programming-languages">
+                                    <li>Python,</li>
+                                    <li>C,</li>
+                                    <li>JavaScript,</li>
+                                    <li>HTML/CSS,</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </li>
+                            <li><span>Familiar Languages</span> <br>
+                                <ul class="programming-languages">
+                                    <li>C++,</li>
+                                    <li>Java,</li>
+                                    <li>Flutter,</li>
+                                    <li>Visual Basic,</li>
+                                    <li>Assembly Language</li>
+                                </ul>
+                            </li>
+                            <li><span>Developer Tools</span> <br>
+                                <ul class="programming-languages">
+                                    <li>Git & GitHub,</li>
+                                    <li>Vim,</li>
+                                    <li>VS Code,</li>
+                                    <li>Nginx,</li>
+                                    <li>Chrome,</li>
+                                    <li>UNIX(Ubuntu)</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <div id="experience" class="tab-content">
                         <ul>
-                            <li><span>Research Assistant</span> <br> Made a research about Internet Of Things</li>
-                            <li><span>Financial Secretary</span> <br> Designed systems to manage the financies of my
-                                department</li>
+                            <li><span>Research Assistant - KNUST </span> <br>
+                                <ul>
+                                    <li>- Researched extensively on Internet Of Things, which will <br> be crucial to the
+                                        committee's final product</li>
+                                    <li>- Designed logo for the committee with Adobe Photoshop which <br> pushed our
+                                        audience reach by over 25%</li>
+                                </ul>
+                            </li>
+                            <li><span>Financial - Secretary Computer Science Society</span> <br>
+                                <ul>
+                                    <li>- Prepared the society's budgets and financial statements, <br> which resulted in over 20% of its funds being saved</li>
+                                    <li>- Ensured complete transparency in all society transactions <br> by reviewing and processing them</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <div id="education" class="tab-content">
                         <ul>
-                            <li><span>2021 - 2024</span> <br> Bachelor Of Science in Computer Science</li>
-                            <li><span>2021 - 2022</span> <br> Software Engineering</li>
+                            <li><span>KNUST - 2021 - 2024</span> <br> Bachelor Of Science in Computer Science</li>
+                            <li><span>ALX - 2021 - 2022</span> <br> Software Engineering</li>
                         </ul>
                     </div>
                 </div>
@@ -135,13 +171,16 @@
                     <div class="layer">
                         <h3>AirBnB Application</h3>
                         <p>Full-stack clone of the Airbnb Web application</p>
-                        <p><ul class="tools-used">
+                        <p>
+                        <ul class="tools-used">
                             <li>Python</li>
                             <li>MySQL</li>
                             <li>JavaScript</li>
                             <li>HTML/CSS</li>
-                        </ul></p>
-                        <a href="https:www.listoweladolwin.tech/hbnb_static/103-index.html"><i class="fas fa-external-link-alt" ></i></a>
+                        </ul>
+                        </p>
+                        <a target="_blank" href="https:www.listoweladolwin.tech/hbnb_static/103-index.html"><i
+                                class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -149,23 +188,28 @@
                     <div class="layer">
                         <h3>C - SHELL</h3>
                         <p>Built a SHELL from scratch which replicates the functionalities of </p>
-                        <p><ul class="tools-used">
+                        <p>
+                        <ul class="tools-used">
                             <li>C</li>
-                            <li>UIzard</li>
-                        </ul></p>
-                        <a href="https:www.listoweladolwin.tech/hbnb_static/103-index.html"><i class="fas fa-external-link-alt" ></i></a>
+                        </ul>
+                        </p>
+                        <a target="_blank" href="https://github.com/ListowelAdolwin/simple_shell"><i
+                                class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/work-3.png" alt="">
                     <div class="layer">
                         <h3>Lost and Found App</h3>
-                        <p>Devloped it to enable students easily recover their missing items</p>
-                        <p><ul class="tools-used">
+                        <p>Developed it to enable students easily recover their missing items</p>
+                        <p>
+                        <ul class="tools-used">
                             <li>Flutter</li>
                             <li>UIzard</li>
-                        </ul></p>
-                        <a href="https:www.listoweladolwin.tech/hbnb_static/103-index.html"><i class="fas fa-external-link-alt" ></i></a>
+                        </ul>
+                        </p>
+                        <a target="_blank" href="https://github.com/ListowelAdolwin/lost_and_found_app"><i
+                                class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
@@ -181,7 +225,8 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i><a class="email" href="mailto:listoweladolwin@gmail.com">listoweladolwin@gmail.com</a> </p>
+                    <p><i class="fas fa-paper-plane"></i><a class="email"
+                            href="mailto:listoweladolwin@gmail.com">listoweladolwin@gmail.com</a> </p>
                     <p><i class="fas fa-phone-square-alt"></i>+233550462566</p>
                     <div class="social-icons">
                         <a href="http://github.com/ListowelAdolwin" target="_blank"><i
@@ -193,14 +238,14 @@
                         <a href="https://www.instagram.com/in/listowel-adolwin/" target="_blank"><i
                                 class="fa-brands fa-instagram"></i></a>
                     </div>
-                    <a class= "CV see-more-btn" href="#" download="">Download CV </a>
+                    <a class="CV see-more-btn" href="#" download="">Download CV </a>
                 </div>
                 <div class="contact-right">
                     <form action="">
-                        <input type="text" name="name" placeholder="enter name" required>
-                        <input type="email" name="email" placeholder="enter email" required>
-                        <textarea name="message" id="message" rows="5" placeholder="enter you message"></textarea>
-                        <button class = "submit see-more-btn cv" type="submit">Submit</button>
+                        <input type="text" name="name" placeholder="Enter name" required>
+                        <input type="email" name="email" placeholder="Enter email" required>
+                        <textarea name="message" id="message" rows="5" placeholder="Enter you message"></textarea>
+                        <button class="submit see-more-btn cv" type="submit">Send</button>
                     </form>
                 </div>
             </div>
