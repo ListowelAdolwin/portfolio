@@ -5,6 +5,35 @@
     scroll-behavior:smooth ;
 }
 
+.typewritter-div{
+    width: 450px;
+}
+
+.typewriter .ame-p{
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #ff004f; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 40px;; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ff004f }
+  }
+
 
 body{
     background: #080808;
@@ -110,6 +139,18 @@ body{
     bottom: 20px;
     right: 30px;
     border-radius: 50%;
+}
+
+.tooltiptext{
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    visibility: hidden;
+}
+
+.totop:hover .tooltiptext{
+    visibility: visible;
+    transition: 0.3s;
 }
 /** About me **/
 
@@ -242,6 +283,7 @@ body{
 }
 
 
+
 .layer{
     width: 100%;
     height: 0;
@@ -262,6 +304,7 @@ body{
 }
 
 .layer h3{
+    font-size: 25px;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -277,6 +320,18 @@ body{
     height: 60px;
     border-radius: 50%;
     text-align: center;
+}
+
+.tools-used{
+    margin-top: 10px;
+    margin-left: 150px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.tools-used li{
+/*     display: inline;
+ */    font-weight: 900;
 }
 
 .see-more-btn{
@@ -387,6 +442,36 @@ nav .fas{
 /******* media queries ******/
 
 @media only screen and (max-width: 600px){
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+
+    .header-nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 1;
+
+    }
+
+    .header-nav ul li{
+        display: block;
+        margin: 20px;
+    }
+
+    .header-nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
     .header-text{
         display: block;
         margin-top: 100%;
@@ -419,4 +504,32 @@ nav .fas{
         height: 100vh;
         padding-top: 50px;
     }
+
+    .about-col-1{
+        flex-basis: 30%;
+    }
+
+    .about-col-2{
+        flex-basis: 650%;
+    }
+
+    .sub-title{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+.contact-left{
+    display: block;
+}
+.contact-right{
+    display: block;
+    width: 100%;
+}
+
+
+.about-col-1 img{
+    display: none;
+}
 }
