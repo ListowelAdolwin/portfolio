@@ -9,18 +9,20 @@
     width: 450px;
 }
 
-.typewriter .ame-p{
+.typewriter .name-p{
     color: #fff;
     font-family: monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #ff004f; /* The typwriter cursor */
+    border-right: .1em solid #ff004f; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 40px;; /* Gives that scrolling effect as the typing happens */
+    margin: 0 5px; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
+    line-height:40px ;
     animation:
       typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
+      blink-caret .6s step-end infinite;
   }
+
 
   /* The typing effect */
   @keyframes typing {
@@ -43,9 +45,6 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-/*     background: url(images/background-pic.jpg);
-    background-size: cover;
-     background-position: top; */
 }
 
 .logo{
@@ -53,6 +52,18 @@ body{
     height: auto;
 }
 
+.logo-listo::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    background: #ababab;
+    height: 3px;
+}
+
+.logo-listo{
+    margin-top: 25px;
+    position: relative;
+}
 
 .container{
     padding: 10px 10%;
@@ -132,7 +143,7 @@ body{
     color: #ff004f;
 }
 
-.to-top{
+.totop{
     color: #ff004f;
     font-size: 30px;
     position: fixed;
@@ -142,6 +153,8 @@ body{
 }
 
 .tooltiptext{
+    font-size: 18px;
+    color: #fff;
     position: fixed;
     bottom: 60px;
     right: 30px;
@@ -152,6 +165,7 @@ body{
     visibility: visible;
     transition: 0.3s;
 }
+
 /** About me **/
 
 
@@ -181,6 +195,7 @@ body{
     flex-basis: 60%;
     font-size: 20px;
 }
+
 
 .sub-title{
     font-size: 60px;
@@ -223,17 +238,23 @@ body{
 
 .tab-content ul li span{
     color:#b34567;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .tab-content{
     display: none;
+    font-size: 16px;
 }
 
 .active-tab-content{
     display: block;
 }
 
+
+.programming-languages li{
+    display: inline;
+    font-size: 17px;
+}
 
 /******** Services *******/
 /*
@@ -332,6 +353,7 @@ body{
 .tools-used li{
 /*     display: inline;
  */    font-weight: 900;
+       text-align: left;
 }
 
 .see-more-btn{
