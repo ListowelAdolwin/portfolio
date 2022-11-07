@@ -22,8 +22,8 @@
         <div class="container">
             <nav class="header-nav">
                 <h1 class="logo logo-listo"><span class="first-name ">LIS</span>TO.</h1>
-                <ul>
-                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul id="navLinks">
+                    <li><i class="fas fa-times" onclick="hideMenu()"></i></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Projects</a></li>
@@ -255,6 +255,20 @@
     <div class="copyright">
         <p> Copyright &copy; Listowel</p>
     </div>
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
