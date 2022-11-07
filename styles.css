@@ -197,6 +197,9 @@ body{
     font-size: 20px;
 }
 
+.about-line-height{
+    line-height: 30px;
+}
 
 .sub-title{
     font-size: 60px;
