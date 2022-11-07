@@ -150,6 +150,7 @@ body{
     bottom: 20px;
     right: 30px;
     border-radius: 50%;
+    z-index: 99
 }
 
 .tooltiptext{
@@ -465,6 +466,10 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
 
+    .typewritter-div{
+        width: 255px;
+    }
+
     nav .fas{
         display: block;
         font-size: 25px;
@@ -474,11 +479,12 @@ nav .fas{
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-        z-index: 1;
+        z-index: 2;
+        transition: right 0.5s;
 
     }
 
@@ -496,37 +502,31 @@ nav .fas{
 
     .header-text{
         display: block;
-        margin-top: 100%;
-        font-size: 15px;
-        margin-top: 10px;
+        font-size: 20px;
+        margin-top: 50px;
+        width: 200px;
     }
 
+    .text-section{
+        line-height: 50px;
+    }
+
+    .picture-section{
+        margin-top: 20px;
+    }
     .header-text h1{
         font-size: 30px;
     }
 
-    .text-section{
-        display: block;
+    .header-nav, .header-text{
+        flex-basis: 100%;
     }
 
-    .picture-section{
-        width: 70%;
+    #about{
+        padding: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
-
-    nav .fas{
-        display: none;
-    }
-
-    nav ul{
-        display: block;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-    }
-
     .about-col-1{
         flex-basis: 30%;
     }
@@ -536,12 +536,16 @@ nav .fas{
     }
 
     .sub-title{
-        text-align: center;
         font-size: 30px;
         font-weight: 600;
         color: #fff;
     }
 
+    .tab-titles p{
+        font-size: 22px;
+        font-weight: 600;
+        margin-right: 20px;
+    }
 .contact-left{
     display: block;
 }
@@ -553,5 +557,9 @@ nav .fas{
 
 .about-col-1 img{
     display: none;
+}
+
+.row{
+    display: block;
 }
 }
