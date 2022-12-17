@@ -46,3 +46,28 @@ function showPrjects() {
 
     }
  */
+
+/**THE SUBMIT FORM */
+
+function sendMail(){
+  var parameters = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+
+const serviceID = 'service_tb8y2f3';
+const templateID = 'template_dlrqcgj';
+
+emailjs.send(serviceID, templateID, parameters)
+.then(
+  res =>{
+    document.getElementById('name').value = "";
+    document.getElementById('email').value = "";
+    document.getElementById('message').value = "";
+    console.log(res);
+    alert('Your message was successfully sent');
+  }
+).catch((err) => alert(err));
+
+}
